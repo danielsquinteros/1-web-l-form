@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Título h1</h1>
+    <h2>Título h2</h2>
+    <h3>Título h3</h3>
+    <h4>Título h4</h4>
+    <h5>Título h5</h5>
+    <h6>Título h6</h6>
+    <p>
+        Hola <span style="color: red">mundo</span>
+    </p>
+    <a href="https://google.com">
+        Google
+    </a>
+    <button>
+        Iniciar sesión
+    </button>
+    <img src="https://images.unsplash.com/photo-1721332154161-847851ea188b?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="La mano de una persona sosteniendo una consola portatil" width="200px">
+    <ol>
+        <li> A - Ordenada</li>
+        <li> B - Ordenada</li>
+    </ol>
+    <ul>
+        <li> A - Desordenada</li>
+        <li> B - Desordenada</li>
+    </ul>
+
+    <h2>Creando mi primer fomulario</h2>
+    <div>
+        <div>
+        </div>
+    </div>
+    <!-- Hola soy un comentario -->
+
+    <!-- Sección de formularios -->
+     <form>
+        <br>
+        <input
+            type="text"
+            name="nombre"
+            placeholder="Ingresa tu nombre"
+            maxlength="10"
+            minlength="2"
+            required
+        />
+        <br>
+
+        <label for="f_apellido">Apellido</label>
+        <input
+            id="f_apellido"
+            type="text"
+            name="apellido"
+            placeholder="Ingresa tu apellido"
+            maxlength="10"
+            minlength="2"
+            required
+        />
+        <br>
+
+        <!-- Opción 1 del label -> dejando el input dentro del label -->
+        <label>
+            Contraseña
+            <input 
+                type="password"
+                placeholder="Ingresa tu contraseña"
+                name="contrasena"
+                maxlength="10"
+                minlength="2"
+                required
+            />
+        </label>
+
+
+        <br>
+        <input
+            type="number"
+            name="edad"
+            required
+        >
+        <br>
+        <label>
+            Aceptas los terminos y condiciones
+            <input
+                type="checkbox"
+                name="condiciones"
+                checked
+                required
+            >
+        </label>
+        <br>
+        <p>Ingresa tu rango salarial</p>
+
+        <label>
+            Entre 0 CLP - 400.000 CLP
+            <input 
+                type="radio"
+                name="salario"
+                value="Entre 0 CLP - 400.000 CLP"
+                >
+        </label>
+        <label>
+            <input 
+                type="radio"
+                name="salario"
+                value="Entre 400.000 CLP - 800.000 CLP"
+                >
+            Entre 400.000 CLP - 800.000 CLP
+        </label>
+        <br>
+        <input
+            type="date"
+            name="fecha_nacimiento"
+            required
+            min="2018-01-01"
+            max="2018-12-31" 
+        >
+
+        <input
+            type="time"
+            name="hora_nacimiento"
+            required
+        >
+        <br>
+        <select name="animal_favortio">
+            <option value="" selected hidden disabled >Selecciona la opción</option>
+            <option value="gato">Gato</option>
+            <option value="perro">Perro</option>
+            <option value="araña">Araña</option>
+            <option value="otra">otra</option>
+        </select>
+        <br>
+        <textarea
+            name="observaciones"
+            rows="4"
+            cols="10"
+            placeholder="Ingresa observaciones"
+        ></textarea>
+        <br>
+
+        <button type="submit">Enviar información</button>
+        <button type="reset">Resetear información</button>
+     </form>
+</body>
+</html>
